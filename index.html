@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Angular 4 App</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"></link>
+</head>
+
+<body>
+
+    <h1>Angular 2 Application</h1>
+    <app-data></app-data>
+
+    <script src="node_modules/es6-shim/es6-shim.min.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="systemjs.config.js"></script>
+    <script>
+        System.import('./app/main')
+            .then(null, console.error.bind(console));
+    </script>
+</body>
+
+</html>
